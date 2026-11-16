@@ -17,8 +17,9 @@ The repo starts with a made up example company, Sunrise Dog Walking. Once the fo
 - `projects/`: one subfolder per project, each with a `brief.md`.
 - `website/`: the one page site (`index.html` and `styles.css`).
 - `apps/`: future apps, each in its own folder.
+- `experts/`: one file per business expert (frameworks, principles, tools). Use them as lenses, never as facts about the company.
 - `lessons/`: the teaching guide for students.
-- `.claude/agents/`: three subagents: researcher, writer, reviewer.
+- `.claude/agents/`: four subagents: researcher, writer, reviewer, advisor.
 - `.claude/skills/`: two skills: `/onboard` and `/close-out`.
 
 ## Start of every session
@@ -38,3 +39,4 @@ The repo starts with a made up example company, Sunrise Dog Walking. Once the fo
 8. Never use em dashes or en dashes. Use commas, periods, colons or parentheses.
 9. Before starting a project, read its `brief.md` in `projects/`.
 10. Before you commit anything students or customers will read, have the reviewer agent check it.
+11. Expert files in `experts/` are ways of thinking, not company facts. Never let them change a price, offer or promise without the founder's OK, and never write as if you are the expert.

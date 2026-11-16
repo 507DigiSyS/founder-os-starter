@@ -14,15 +14,16 @@ New to the words? A repo is a folder whose history is tracked by a tool called g
 
 Most people start every AI conversation from zero. They explain the business again, paste the same facts again, and lose the good answers when the chat closes. Founder OS fixes that by putting the context in one place that both people and agents can read.
 
-It has six parts. Each one has one job.
+It has seven parts. Each one has one job.
 
 | Element | Where | Its job |
 | --- | --- | --- |
 | Rules | [`CLAUDE.md`](CLAUDE.md) | Tells Claude how this repo works. Loaded at the start of every session. |
 | Context | [`company/`](company/README.md) | The facts: who you are, who you serve, what you sell, how you sound. |
 | Memory | [`history/`](history/README.md) | What happened, what you decided and why, and what you learned. |
+| Experts | [`experts/`](experts/README.md) | How top business experts think, so Claude can review your work through their eyes. |
 | Work | `projects/`, `website/`, `apps/` | The things you build, each using the context. |
-| Agents | `.claude/agents/` | Helpers with one job each: researcher, writer, reviewer. |
+| Agents | `.claude/agents/` | Helpers with one job each: researcher, writer, reviewer, advisor. |
 | Skills | `.claude/skills/` | Commands you type: `/onboard` to start, `/close-out` to finish. |
 
 ### Where things live
@@ -44,9 +45,10 @@ founder-os-starter/
     website/         # the brief for the starter website
   website/         # a one page site in plain HTML and CSS
   apps/            # future apps live here, each in its own folder
+  experts/         # one file per business expert, plus a template
   lessons/         # five short lessons, start here to learn
   .claude/         # extras for Claude Code
-    agents/          # three helper agents: researcher, writer, reviewer
+    agents/          # four helper agents: researcher, writer, reviewer, advisor
     skills/          # two commands: /onboard and /close-out
   LICENSE          # MIT license
   .gitignore       # files git should not track
@@ -96,6 +98,7 @@ Pick the tool that fits the job.
 | Set up your company for the first time | `/onboard` | Type `/onboard` and answer the 8 short questions Claude asks |
 | Find something you wrote down | The researcher agent | `Use the researcher agent to find out what our goals are this year` |
 | Get words written in your voice | The writer agent | `Use the writer agent to draft a welcome email for new customers` |
+| Get feedback from expert lenses | The advisor agent | `Use the advisor agent to have Alex Hormozi and Kevin O'Leary review company/offerings.md` |
 | Check work before you share it | The reviewer agent | `Use the reviewer agent to check the website against company/` |
 | Change the website | A normal prompt | `Update website/index.html to match company/offerings.md` |
 | Do a big job with many agents | Ultracode | `ultracode: write three versions of the intro in website/index.html, have reviewers check each against company/, then use the best one` |

@@ -9,13 +9,15 @@ Use a single helper agent, then run many agents at once with ultracode.
 1. Learn what a subagent is. It is a helper with one job and its own
    instructions. Each one is a Markdown file in `.claude/agents/`. Claude
    hands work to a subagent when the task matches its description, or
-   when you ask for it by name. This repo has three:
+   when you ask for it by name. This repo has four:
    - [researcher](../.claude/agents/researcher.md): answers questions
      from the library and names its sources. It cannot change files.
    - [writer](../.claude/agents/writer.md): drafts copy in your brand
      voice.
    - [reviewer](../.claude/agents/reviewer.md): checks work against your
      facts and reports problems. It cannot change files.
+   - [advisor](../.claude/agents/advisor.md): reviews your plan or offer
+     through the eyes of the experts in `experts/`. It cannot change files.
 
 2. Open one of those files. The top part says when Claude should use the
    agent and what it may do. The rest is its instructions.
