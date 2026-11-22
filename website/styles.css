@@ -22,7 +22,7 @@ img{max-width:100%;display:block}
 .site-header{
   display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   padding:14px 18px;border-bottom:2px solid var(--purple-deep);
-  position:sticky;top:0;background:rgba(7,4,15,.95);z-index:10;
+  position:sticky;top:0;background:#07040f;z-index:10;
 }
 .logo-small{width:52px;height:52px;object-fit:contain}
 .brand{display:flex;flex-direction:column;margin-right:auto;min-width:0}
